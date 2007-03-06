@@ -1,7 +1,7 @@
 package Mail::Audit::Razor;
 use Mail::Audit;
 use vars qw(@VERSION $config);
-$VERSION = '2.250';
+$VERSION = '1.801';
 1;
 
 package Mail::Audit;
