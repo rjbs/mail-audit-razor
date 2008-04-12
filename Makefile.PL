@@ -1,4 +1,4 @@
-unless (eval { require Razor::Client; 1 }) {
+unless (eval { $ENV{RAZOR_INSTALLED} or require Razor::Client; 1 }) {
   warn "Mail::Audit::Razor requires the not-on-CPAN Razor::Client\n";
   exit 0;
 }
