@@ -1,4 +1,7 @@
-use strict;
+unless (eval { $ENV{RAZOR_INSTALLED} or require Razor::Client; 1 }) {
+  warn "Mail::Audit::Razor requires the not-on-CPAN Razor::Client\n";
+  exit 0;
+}
 
 use inc::Module::Install;
 
